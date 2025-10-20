@@ -8,7 +8,7 @@ export const createServerClient = cache(() => {
   return createServerComponentClient<Database>({ cookies: () => cookieStore });
 });
 
-export async function getSession() {
+export const auth = async () => {
   const supabase = createServerClient();
   try {
     const {

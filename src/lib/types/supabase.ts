@@ -6,7 +6,113 @@ export type Json =
   | { [key: string]: Json | undefined }
   | Json[]
 
-export interface Database {
+export type Database = {
+  public: {
+    Tables: {
+      ads: {
+        Row: {
+          id: string
+          title: string
+          description: string
+          price: number
+          category: string
+          user_id: string
+          created_at: string
+          updated_at: string
+          slug: string
+          images: string[]
+          location: string
+          status: string
+        }
+        Insert: {
+          id?: string
+          title: string
+          description: string
+          price: number
+          category: string
+          user_id: string
+          created_at?: string
+          updated_at?: string
+          slug: string
+          images?: string[]
+          location: string
+          status?: string
+        }
+        Update: {
+          id?: string
+          title?: string
+          description?: string
+          price?: number
+          category?: string
+          user_id?: string
+          created_at?: string
+          updated_at?: string
+          slug?: string
+          images?: string[]
+          location?: string
+          status?: string
+        }
+      }
+      bookmarks: {
+        Row: {
+          id: string
+          user_id: string
+          ad_id: string
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          ad_id: string
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          ad_id?: string
+          created_at?: string
+        }
+      }
+      profiles: {
+        Row: {
+          id: string
+          full_name: string
+          avatar_url: string
+          email: string
+          phone: string
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id: string
+          full_name?: string
+          avatar_url?: string
+          email: string
+          phone?: string
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          full_name?: string
+          avatar_url?: string
+          email?: string
+          phone?: string
+          created_at?: string
+          updated_at?: string
+        }
+      }
+    }
+    Views: {
+      [_ in never]: never
+    }
+    Functions: {
+      [_ in never]: never
+    }
+    Enums: {
+      [_ in never]: never
+    }
+  }
   public: {
     Tables: {
       profiles: {
