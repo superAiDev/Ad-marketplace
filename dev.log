@@ -3454,3 +3454,5 @@ Attempted import error: 'auth' is not exported from '@/lib/auth' (imported as 'a
 
 Import trace for requested module:
 ./app/page.tsx
+[?25h
+ ELIFECYCLE  Command failed.
