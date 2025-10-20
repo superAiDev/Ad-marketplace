@@ -1,0 +1,3456 @@
+nohup: ignoring input
+
+> ad-marketplace@0.1.0 dev /workspaces/Ad-marketplace
+> next dev
+
+   ▲ Next.js 14.0.0
+   - Local:        http://localhost:3000
+
+ ✓ Ready in 2.5s
+ ○ Compiling /page ...
+ ✓ Compiled /page in 3s (467 modules)
+ ✓ Compiled /not-found in 355ms (472 modules)
+ ✓ Compiled /services/[category]/[slug]/page in 248ms (472 modules)
+ ✓ Compiled /account/page in 167ms (474 modules)
+ ○ Compiling /account/new/page ...
+ ✓ Compiled /account/new/page in 519ms (506 modules)
+ ✓ Compiled in 218ms (253 modules)
+ ✓ Compiled in 117ms (253 modules)
+ ✓ Compiled in 73ms (253 modules)
+ ✓ Compiled in 90ms (253 modules)
+ ✓ Compiled in 84ms (253 modules)
+ ✓ Compiled in 82ms (253 modules)
+ ✓ Compiled in 74ms (253 modules)
+ ✓ Compiled in 82ms (253 modules)
+ ✓ Compiled in 70ms (253 modules)
+ ✓ Compiled in 67ms (253 modules)
+ ✓ Compiled in 67ms (253 modules)
+ ⨯ ./middleware.ts:1:0
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { createMiddlewareClient } [36mfrom[39m [32m'@supabase/auth-helpers-nextjs'[39m[33m;[39m[0m
+[0m [90m 2 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m'next/server'[39m[33m;[39m[0m
+[0m [90m 3 |[39m [36mimport[39m type { [33mNextRequest[39m } [36mfrom[39m [32m'next/server'[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m type { [33mDatabase[39m } [36mfrom[39m [32m'@/lib/supabase'[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ○ Compiling /middleware ...
+ ✓ Compiled /_error in 1083ms (661 modules)
+ ✓ Compiled /not-found in 362ms (665 modules)
+   Reload env: .env.local
+ ⨯ ./middleware.ts:1:0
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { createMiddlewareClient } [36mfrom[39m [32m'@supabase/auth-helpers-nextjs'[39m[33m;[39m[0m
+[0m [90m 2 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m'next/server'[39m[33m;[39m[0m
+[0m [90m 3 |[39m [36mimport[39m type { [33mNextRequest[39m } [36mfrom[39m [32m'next/server'[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m type { [33mDatabase[39m } [36mfrom[39m [32m'@/lib/supabase'[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+   Reload env: .env.local
+ ⨯ ./middleware.ts:1:0
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { createMiddlewareClient } [36mfrom[39m [32m'@supabase/auth-helpers-nextjs'[39m[33m;[39m[0m
+[0m [90m 2 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m'next/server'[39m[33m;[39m[0m
+[0m [90m 3 |[39m [36mimport[39m type { [33mNextRequest[39m } [36mfrom[39m [32m'next/server'[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m type { [33mDatabase[39m } [36mfrom[39m [32m'@/lib/supabase'[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ✓ Compiled in 477ms (376 modules)
+ ✓ Compiled in 110ms (376 modules)
+ ✓ Compiled in 114ms (376 modules)
+ ✓ Compiled in 100ms (376 modules)
+ ✓ Compiled in 89ms (376 modules)
+ ✓ Compiled in 91ms (376 modules)
+ ⨯ ./src/components/ad/AdForm.tsx
+Error: 
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/ad/AdForm.tsx[0m:168:1]
+ [2m168[0m |         setStep((s) => Math.max(1, s - 1))
+ [2m169[0m |       }
+ [2m170[0m |     
+ [2m171[0m | [31;1m,[0m[31;1m-[0m[31;1m>[0m   return (
+ [2m172[0m | [31;1m|[0m       <div className="bg-slate-800 p-4 rounded text-white">
+ [2m173[0m | [31;1m|[0m         <div className="mb-4">مرحله {step} از 3</div>
+ [2m174[0m | [31;1m|[0m         {step === 1 && (
+ [2m175[0m | [31;1m|[0m           <div>
+ [2m176[0m | [31;1m|[0m             <label className="block mb-1">عنوان</label>
+ [2m177[0m | [31;1m|[0m             <Input value={title} onChange={(e) => setTitle(e.target.value)} />
+ [2m178[0m | [31;1m|[0m           </div>
+ [2m179[0m | [31;1m|[0m         )}
+ [2m180[0m | [31;1m|[0m         {step === 2 && (
+ [2m181[0m | [31;1m|[0m           <div>
+ [2m182[0m | [31;1m|[0m             <label className="block mb-1">توضیحات</label>
+ [2m183[0m | [31;1m|[0m             <textarea className="w-full p-2 rounded bg-slate-900 text-white" rows={6} value={description} onChange={(e) => setDescription(e.target.value)} />
+ [2m184[0m | [31;1m|[0m           </div>
+ [2m185[0m | [31;1m|[0m         )}
+ [2m186[0m | [31;1m|[0m         {step === 3 && (
+ [2m187[0m | [31;1m|[0m           <div>
+ [2m188[0m | [31;1m|[0m             <div>مرور نهایی</div>
+ [2m189[0m | [31;1m|[0m             <div className="mt-2">عنوان: {title}</div>
+ [2m190[0m | [31;1m|[0m             <div className="mt-2">توضیحات: {description}</div>
+ [2m191[0m | [31;1m|[0m           </div>
+ [2m192[0m | [31;1m|[0m         )}
+ [2m193[0m | [31;1m|[0m   
+ [2m194[0m | [31;1m|[0m         <div className="mt-4 flex gap-2">
+ [2m195[0m | [31;1m|[0m           {step > 1 && <Button variant="ghost" onClick={prev}>بازگشت</Button>}
+ [2m196[0m | [31;1m|[0m           {step < 3 ? (
+ [2m197[0m | [31;1m|[0m             <Button onClick={next}>ادامه</Button>
+ [2m198[0m | [31;1m|[0m           ) : (
+ [2m199[0m | [31;1m|[0m             <Button variant="default">ثبت آگهی</Button>
+ [2m200[0m | [31;1m|[0m           )}
+ [2m201[0m | [31;1m|[0m         </div>
+ [2m202[0m | [31;1m|[0m       </div>
+ [2m203[0m | [31;1m`[0m[31;1m-[0m[31;1m>[0m   )
+ [2m204[0m |     }
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/ad/AdForm.tsx[0m:201:1]
+ [2m201[0m |       </div>
+ [2m202[0m |     </div>
+ [2m203[0m |   )
+ [2m204[0m | }
+     : [31;1m^[0m
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+./app/account/new/page.tsx
+ ✓ Compiled in 79ms (360 modules)
+ ✓ Compiled in 92ms (360 modules)
+ ⨯ ./src/components/ad/AdForm.tsx
+Error: 
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/ad/AdForm.tsx[0m:168:1]
+ [2m168[0m |         setStep((s) => Math.max(1, s - 1))
+ [2m169[0m |       }
+ [2m170[0m |     
+ [2m171[0m | [31;1m,[0m[31;1m-[0m[31;1m>[0m   return (
+ [2m172[0m | [31;1m|[0m       <div className="bg-slate-800 p-4 rounded text-white">
+ [2m173[0m | [31;1m|[0m         <div className="mb-4">مرحله {step} از 3</div>
+ [2m174[0m | [31;1m|[0m         {step === 1 && (
+ [2m175[0m | [31;1m|[0m           <div>
+ [2m176[0m | [31;1m|[0m             <label className="block mb-1">عنوان</label>
+ [2m177[0m | [31;1m|[0m             <Input value={title} onChange={(e) => setTitle(e.target.value)} />
+ [2m178[0m | [31;1m|[0m           </div>
+ [2m179[0m | [31;1m|[0m         )}
+ [2m180[0m | [31;1m|[0m         {step === 2 && (
+ [2m181[0m | [31;1m|[0m           <div>
+ [2m182[0m | [31;1m|[0m             <label className="block mb-1">توضیحات</label>
+ [2m183[0m | [31;1m|[0m             <textarea className="w-full p-2 rounded bg-slate-900 text-white" rows={6} value={description} onChange={(e) => setDescription(e.target.value)} />
+ [2m184[0m | [31;1m|[0m           </div>
+ [2m185[0m | [31;1m|[0m         )}
+ [2m186[0m | [31;1m|[0m         {step === 3 && (
+ [2m187[0m | [31;1m|[0m           <div>
+ [2m188[0m | [31;1m|[0m             <div>مرور نهایی</div>
+ [2m189[0m | [31;1m|[0m             <div className="mt-2">عنوان: {title}</div>
+ [2m190[0m | [31;1m|[0m             <div className="mt-2">توضیحات: {description}</div>
+ [2m191[0m | [31;1m|[0m           </div>
+ [2m192[0m | [31;1m|[0m         )}
+ [2m193[0m | [31;1m|[0m   
+ [2m194[0m | [31;1m|[0m         <div className="mt-4 flex gap-2">
+ [2m195[0m | [31;1m|[0m           {step > 1 && <Button variant="ghost" onClick={prev}>بازگشت</Button>}
+ [2m196[0m | [31;1m|[0m           {step < 3 ? (
+ [2m197[0m | [31;1m|[0m             <Button onClick={next}>ادامه</Button>
+ [2m198[0m | [31;1m|[0m           ) : (
+ [2m199[0m | [31;1m|[0m             <Button variant="default">ثبت آگهی</Button>
+ [2m200[0m | [31;1m|[0m           )}
+ [2m201[0m | [31;1m|[0m         </div>
+ [2m202[0m | [31;1m|[0m       </div>
+ [2m203[0m | [31;1m`[0m[31;1m-[0m[31;1m>[0m   )
+ [2m204[0m |     }
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/ad/AdForm.tsx[0m:201:1]
+ [2m201[0m |       </div>
+ [2m202[0m |     </div>
+ [2m203[0m |   )
+ [2m204[0m | }
+     : [31;1m^[0m
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+./app/account/new/page.tsx
+ ○ Compiling /not-found ...
+ ⨯ ./src/components/ad/AdForm.tsx
+Error: 
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/ad/AdForm.tsx[0m:168:1]
+ [2m168[0m |         setStep((s) => Math.max(1, s - 1))
+ [2m169[0m |       }
+ [2m170[0m |     
+ [2m171[0m | [31;1m,[0m[31;1m-[0m[31;1m>[0m   return (
+ [2m172[0m | [31;1m|[0m       <div className="bg-slate-800 p-4 rounded text-white">
+ [2m173[0m | [31;1m|[0m         <div className="mb-4">مرحله {step} از 3</div>
+ [2m174[0m | [31;1m|[0m         {step === 1 && (
+ [2m175[0m | [31;1m|[0m           <div>
+ [2m176[0m | [31;1m|[0m             <label className="block mb-1">عنوان</label>
+ [2m177[0m | [31;1m|[0m             <Input value={title} onChange={(e) => setTitle(e.target.value)} />
+ [2m178[0m | [31;1m|[0m           </div>
+ [2m179[0m | [31;1m|[0m         )}
+ [2m180[0m | [31;1m|[0m         {step === 2 && (
+ [2m181[0m | [31;1m|[0m           <div>
+ [2m182[0m | [31;1m|[0m             <label className="block mb-1">توضیحات</label>
+ [2m183[0m | [31;1m|[0m             <textarea className="w-full p-2 rounded bg-slate-900 text-white" rows={6} value={description} onChange={(e) => setDescription(e.target.value)} />
+ [2m184[0m | [31;1m|[0m           </div>
+ [2m185[0m | [31;1m|[0m         )}
+ [2m186[0m | [31;1m|[0m         {step === 3 && (
+ [2m187[0m | [31;1m|[0m           <div>
+ [2m188[0m | [31;1m|[0m             <div>مرور نهایی</div>
+ [2m189[0m | [31;1m|[0m             <div className="mt-2">عنوان: {title}</div>
+ [2m190[0m | [31;1m|[0m             <div className="mt-2">توضیحات: {description}</div>
+ [2m191[0m | [31;1m|[0m           </div>
+ [2m192[0m | [31;1m|[0m         )}
+ [2m193[0m | [31;1m|[0m   
+ [2m194[0m | [31;1m|[0m         <div className="mt-4 flex gap-2">
+ [2m195[0m | [31;1m|[0m           {step > 1 && <Button variant="ghost" onClick={prev}>بازگشت</Button>}
+ [2m196[0m | [31;1m|[0m           {step < 3 ? (
+ [2m197[0m | [31;1m|[0m             <Button onClick={next}>ادامه</Button>
+ [2m198[0m | [31;1m|[0m           ) : (
+ [2m199[0m | [31;1m|[0m             <Button variant="default">ثبت آگهی</Button>
+ [2m200[0m | [31;1m|[0m           )}
+ [2m201[0m | [31;1m|[0m         </div>
+ [2m202[0m | [31;1m|[0m       </div>
+ [2m203[0m | [31;1m`[0m[31;1m-[0m[31;1m>[0m   )
+ [2m204[0m |     }
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/ad/AdForm.tsx[0m:201:1]
+ [2m201[0m |       </div>
+ [2m202[0m |     </div>
+ [2m203[0m |   )
+ [2m204[0m | }
+     : [31;1m^[0m
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+./app/account/new/page.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./app/page.tsx
+Error: 
+  [31mx[0m Expected ',', got 'className'
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/page.tsx[0m:61:1]
+ [2m61[0m |       </main>
+ [2m62[0m |     </div>
+ [2m63[0m | 
+ [2m64[0m |       <section className="mb-6">
+    : [31;1m               ^^^^^^^^^[0m
+ [2m65[0m |         <h2 className="text-xl font-semibold mb-2">جستجوی سریع</h2>
+ [2m66[0m |         <form className="flex gap-2">
+ [2m67[0m |           <Input className="flex-1" placeholder="عنوان یا شهر را وارد کنید" />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./app/page.tsx
+Error: 
+  [31mx[0m Expected ',', got 'className'
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/page.tsx[0m:62:1]
+ [2m62[0m |       </main>
+ [2m63[0m |     </div>
+ [2m64[0m | 
+ [2m65[0m |       <section className="mb-6">
+    : [31;1m               ^^^^^^^^^[0m
+ [2m66[0m |         <h2 className="text-xl font-semibold mb-2">جستجوی سریع</h2>
+ [2m67[0m |         <form className="flex gap-2">
+ [2m68[0m |           <Input className="flex-1" placeholder="عنوان یا شهر را وارد کنید" />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled /not-found in 205ms (362 modules)
+ ✓ Compiled in 250ms (362 modules)
+ ✓ Compiled in 90ms (362 modules)
+ ✓ Compiled in 150ms (362 modules)
+ ✓ Compiled in 88ms (362 modules)
+ ✓ Compiled in 83ms (362 modules)
+ ✓ Compiled in 158ms (362 modules)
+ ✓ Compiled in 89ms (362 modules)
+ ✓ Compiled in 111ms (362 modules)
+ ✓ Compiled in 74ms (362 modules)
+ ✓ Compiled in 125ms (362 modules)
+ ✓ Compiled in 90ms (362 modules)
+ ✓ Compiled in 75ms (362 modules)
+ ⨯ ./app/page.tsx
+Error: 
+  [31mx[0m Expected ',', got 'className'
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/page.tsx[0m:62:1]
+ [2m62[0m |       </main>
+ [2m63[0m |     </div>
+ [2m64[0m | 
+ [2m65[0m |       <section className="mb-6">
+    : [31;1m               ^^^^^^^^^[0m
+ [2m66[0m |         <h2 className="text-xl font-semibold mb-2">جستجوی سریع</h2>
+ [2m67[0m |         <form className="flex gap-2">
+ [2m68[0m |           <Input className="flex-1" placeholder="عنوان یا شهر را وارد کنید" />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ⨯ ./app/page.tsx
+Error: 
+  [31mx[0m Expected ',', got 'className'
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/page.tsx[0m:62:1]
+ [2m62[0m |       </main>
+ [2m63[0m |     </div>
+ [2m64[0m | 
+ [2m65[0m |       <section className="mb-6">
+    : [31;1m               ^^^^^^^^^[0m
+ [2m66[0m |         <h2 className="text-xl font-semibold mb-2">جستجوی سریع</h2>
+ [2m67[0m |         <form className="flex gap-2">
+ [2m68[0m |           <Input className="flex-1" placeholder="عنوان یا شهر را وارد کنید" />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ⨯ ./app/page.tsx
+Error: 
+  [31mx[0m Expected ',', got 'className'
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/page.tsx[0m:62:1]
+ [2m62[0m |       </main>
+ [2m63[0m |     </div>
+ [2m64[0m | 
+ [2m65[0m |       <section className="mb-6">
+    : [31;1m               ^^^^^^^^^[0m
+ [2m66[0m |         <h2 className="text-xl font-semibold mb-2">جستجوی سریع</h2>
+ [2m67[0m |         <form className="flex gap-2">
+ [2m68[0m |           <Input className="flex-1" placeholder="عنوان یا شهر را وارد کنید" />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ○ Compiling /not-found ...
+ ⨯ ./src/components/ad/AdForm.tsx
+Error: 
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/ad/AdForm.tsx[0m:168:1]
+ [2m168[0m |         setStep((s) => Math.max(1, s - 1))
+ [2m169[0m |       }
+ [2m170[0m |     
+ [2m171[0m | [31;1m,[0m[31;1m-[0m[31;1m>[0m   return (
+ [2m172[0m | [31;1m|[0m       <div className="bg-slate-800 p-4 rounded text-white">
+ [2m173[0m | [31;1m|[0m         <div className="mb-4">مرحله {step} از 3</div>
+ [2m174[0m | [31;1m|[0m         {step === 1 && (
+ [2m175[0m | [31;1m|[0m           <div>
+ [2m176[0m | [31;1m|[0m             <label className="block mb-1">عنوان</label>
+ [2m177[0m | [31;1m|[0m             <Input value={title} onChange={(e) => setTitle(e.target.value)} />
+ [2m178[0m | [31;1m|[0m           </div>
+ [2m179[0m | [31;1m|[0m         )}
+ [2m180[0m | [31;1m|[0m         {step === 2 && (
+ [2m181[0m | [31;1m|[0m           <div>
+ [2m182[0m | [31;1m|[0m             <label className="block mb-1">توضیحات</label>
+ [2m183[0m | [31;1m|[0m             <textarea className="w-full p-2 rounded bg-slate-900 text-white" rows={6} value={description} onChange={(e) => setDescription(e.target.value)} />
+ [2m184[0m | [31;1m|[0m           </div>
+ [2m185[0m | [31;1m|[0m         )}
+ [2m186[0m | [31;1m|[0m         {step === 3 && (
+ [2m187[0m | [31;1m|[0m           <div>
+ [2m188[0m | [31;1m|[0m             <div>مرور نهایی</div>
+ [2m189[0m | [31;1m|[0m             <div className="mt-2">عنوان: {title}</div>
+ [2m190[0m | [31;1m|[0m             <div className="mt-2">توضیحات: {description}</div>
+ [2m191[0m | [31;1m|[0m           </div>
+ [2m192[0m | [31;1m|[0m         )}
+ [2m193[0m | [31;1m|[0m   
+ [2m194[0m | [31;1m|[0m         <div className="mt-4 flex gap-2">
+ [2m195[0m | [31;1m|[0m           {step > 1 && <Button variant="ghost" onClick={prev}>بازگشت</Button>}
+ [2m196[0m | [31;1m|[0m           {step < 3 ? (
+ [2m197[0m | [31;1m|[0m             <Button onClick={next}>ادامه</Button>
+ [2m198[0m | [31;1m|[0m           ) : (
+ [2m199[0m | [31;1m|[0m             <Button variant="default">ثبت آگهی</Button>
+ [2m200[0m | [31;1m|[0m           )}
+ [2m201[0m | [31;1m|[0m         </div>
+ [2m202[0m | [31;1m|[0m       </div>
+ [2m203[0m | [31;1m`[0m[31;1m-[0m[31;1m>[0m   )
+ [2m204[0m |     }
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/ad/AdForm.tsx[0m:201:1]
+ [2m201[0m |       </div>
+ [2m202[0m |     </div>
+ [2m203[0m |   )
+ [2m204[0m | }
+     : [31;1m^[0m
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+./app/account/new/page.tsx
+ ⨯ ./src/components/ad/AdForm.tsx
+Error: 
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/ad/AdForm.tsx[0m:168:1]
+ [2m168[0m |         setStep((s) => Math.max(1, s - 1))
+ [2m169[0m |       }
+ [2m170[0m |     
+ [2m171[0m | [31;1m,[0m[31;1m-[0m[31;1m>[0m   return (
+ [2m172[0m | [31;1m|[0m       <div className="bg-slate-800 p-4 rounded text-white">
+ [2m173[0m | [31;1m|[0m         <div className="mb-4">مرحله {step} از 3</div>
+ [2m174[0m | [31;1m|[0m         {step === 1 && (
+ [2m175[0m | [31;1m|[0m           <div>
+ [2m176[0m | [31;1m|[0m             <label className="block mb-1">عنوان</label>
+ [2m177[0m | [31;1m|[0m             <Input value={title} onChange={(e) => setTitle(e.target.value)} />
+ [2m178[0m | [31;1m|[0m           </div>
+ [2m179[0m | [31;1m|[0m         )}
+ [2m180[0m | [31;1m|[0m         {step === 2 && (
+ [2m181[0m | [31;1m|[0m           <div>
+ [2m182[0m | [31;1m|[0m             <label className="block mb-1">توضیحات</label>
+ [2m183[0m | [31;1m|[0m             <textarea className="w-full p-2 rounded bg-slate-900 text-white" rows={6} value={description} onChange={(e) => setDescription(e.target.value)} />
+ [2m184[0m | [31;1m|[0m           </div>
+ [2m185[0m | [31;1m|[0m         )}
+ [2m186[0m | [31;1m|[0m         {step === 3 && (
+ [2m187[0m | [31;1m|[0m           <div>
+ [2m188[0m | [31;1m|[0m             <div>مرور نهایی</div>
+ [2m189[0m | [31;1m|[0m             <div className="mt-2">عنوان: {title}</div>
+ [2m190[0m | [31;1m|[0m             <div className="mt-2">توضیحات: {description}</div>
+ [2m191[0m | [31;1m|[0m           </div>
+ [2m192[0m | [31;1m|[0m         )}
+ [2m193[0m | [31;1m|[0m   
+ [2m194[0m | [31;1m|[0m         <div className="mt-4 flex gap-2">
+ [2m195[0m | [31;1m|[0m           {step > 1 && <Button variant="ghost" onClick={prev}>بازگشت</Button>}
+ [2m196[0m | [31;1m|[0m           {step < 3 ? (
+ [2m197[0m | [31;1m|[0m             <Button onClick={next}>ادامه</Button>
+ [2m198[0m | [31;1m|[0m           ) : (
+ [2m199[0m | [31;1m|[0m             <Button variant="default">ثبت آگهی</Button>
+ [2m200[0m | [31;1m|[0m           )}
+ [2m201[0m | [31;1m|[0m         </div>
+ [2m202[0m | [31;1m|[0m       </div>
+ [2m203[0m | [31;1m`[0m[31;1m-[0m[31;1m>[0m   )
+ [2m204[0m |     }
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/ad/AdForm.tsx[0m:201:1]
+ [2m201[0m |       </div>
+ [2m202[0m |     </div>
+ [2m203[0m |   )
+ [2m204[0m | }
+     : [31;1m^[0m
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+./app/account/new/page.tsx
+ ⨯ ./src/components/ad/AdForm.tsx
+Error: 
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/ad/AdForm.tsx[0m:169:1]
+ [2m169[0m |         setStep((s) => Math.max(1, s - 1))
+ [2m170[0m |       }
+ [2m171[0m |     
+ [2m172[0m | [31;1m,[0m[31;1m-[0m[31;1m>[0m   return (
+ [2m173[0m | [31;1m|[0m       <div className="bg-slate-800 p-4 rounded text-white">
+ [2m174[0m | [31;1m|[0m         <div className="mb-4">مرحله {step} از 3</div>
+ [2m175[0m | [31;1m|[0m         {step === 1 && (
+ [2m176[0m | [31;1m|[0m           <div>
+ [2m177[0m | [31;1m|[0m             <label className="block mb-1">عنوان</label>
+ [2m178[0m | [31;1m|[0m             <Input value={title} onChange={(e) => setTitle(e.target.value)} />
+ [2m179[0m | [31;1m|[0m           </div>
+ [2m180[0m | [31;1m|[0m         )}
+ [2m181[0m | [31;1m|[0m         {step === 2 && (
+ [2m182[0m | [31;1m|[0m           <div>
+ [2m183[0m | [31;1m|[0m             <label className="block mb-1">توضیحات</label>
+ [2m184[0m | [31;1m|[0m             <textarea className="w-full p-2 rounded bg-slate-900 text-white" rows={6} value={description} onChange={(e) => setDescription(e.target.value)} />
+ [2m185[0m | [31;1m|[0m           </div>
+ [2m186[0m | [31;1m|[0m         )}
+ [2m187[0m | [31;1m|[0m         {step === 3 && (
+ [2m188[0m | [31;1m|[0m           <div>
+ [2m189[0m | [31;1m|[0m             <div>مرور نهایی</div>
+ [2m190[0m | [31;1m|[0m             <div className="mt-2">عنوان: {title}</div>
+ [2m191[0m | [31;1m|[0m             <div className="mt-2">توضیحات: {description}</div>
+ [2m192[0m | [31;1m|[0m           </div>
+ [2m193[0m | [31;1m|[0m         )}
+ [2m194[0m | [31;1m|[0m   
+ [2m195[0m | [31;1m|[0m         <div className="mt-4 flex gap-2">
+ [2m196[0m | [31;1m|[0m           {step > 1 && <Button variant="ghost" onClick={prev}>بازگشت</Button>}
+ [2m197[0m | [31;1m|[0m           {step < 3 ? (
+ [2m198[0m | [31;1m|[0m             <Button onClick={next}>ادامه</Button>
+ [2m199[0m | [31;1m|[0m           ) : (
+ [2m200[0m | [31;1m|[0m             <Button variant="default">ثبت آگهی</Button>
+ [2m201[0m | [31;1m|[0m           )}
+ [2m202[0m | [31;1m|[0m         </div>
+ [2m203[0m | [31;1m|[0m       </div>
+ [2m204[0m | [31;1m`[0m[31;1m-[0m[31;1m>[0m   )
+ [2m205[0m |     }
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/ad/AdForm.tsx[0m:202:1]
+ [2m202[0m |       </div>
+ [2m203[0m |     </div>
+ [2m204[0m |   )
+ [2m205[0m | }
+     : [31;1m^[0m
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+./app/account/new/page.tsx
+ ⨯ ./src/components/ad/AdForm.tsx
+Error: 
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/ad/AdForm.tsx[0m:169:1]
+ [2m169[0m |         setStep((s) => Math.max(1, s - 1))
+ [2m170[0m |       }
+ [2m171[0m |     
+ [2m172[0m | [31;1m,[0m[31;1m-[0m[31;1m>[0m   return (
+ [2m173[0m | [31;1m|[0m       <div className="bg-slate-800 p-4 rounded text-white">
+ [2m174[0m | [31;1m|[0m         <div className="mb-4">مرحله {step} از 3</div>
+ [2m175[0m | [31;1m|[0m         {step === 1 && (
+ [2m176[0m | [31;1m|[0m           <div>
+ [2m177[0m | [31;1m|[0m             <label className="block mb-1">عنوان</label>
+ [2m178[0m | [31;1m|[0m             <Input value={title} onChange={(e) => setTitle(e.target.value)} />
+ [2m179[0m | [31;1m|[0m           </div>
+ [2m180[0m | [31;1m|[0m         )}
+ [2m181[0m | [31;1m|[0m         {step === 2 && (
+ [2m182[0m | [31;1m|[0m           <div>
+ [2m183[0m | [31;1m|[0m             <label className="block mb-1">توضیحات</label>
+ [2m184[0m | [31;1m|[0m             <textarea className="w-full p-2 rounded bg-slate-900 text-white" rows={6} value={description} onChange={(e) => setDescription(e.target.value)} />
+ [2m185[0m | [31;1m|[0m           </div>
+ [2m186[0m | [31;1m|[0m         )}
+ [2m187[0m | [31;1m|[0m         {step === 3 && (
+ [2m188[0m | [31;1m|[0m           <div>
+ [2m189[0m | [31;1m|[0m             <div>مرور نهایی</div>
+ [2m190[0m | [31;1m|[0m             <div className="mt-2">عنوان: {title}</div>
+ [2m191[0m | [31;1m|[0m             <div className="mt-2">توضیحات: {description}</div>
+ [2m192[0m | [31;1m|[0m           </div>
+ [2m193[0m | [31;1m|[0m         )}
+ [2m194[0m | [31;1m|[0m   
+ [2m195[0m | [31;1m|[0m         <div className="mt-4 flex gap-2">
+ [2m196[0m | [31;1m|[0m           {step > 1 && <Button variant="ghost" onClick={prev}>بازگشت</Button>}
+ [2m197[0m | [31;1m|[0m           {step < 3 ? (
+ [2m198[0m | [31;1m|[0m             <Button onClick={next}>ادامه</Button>
+ [2m199[0m | [31;1m|[0m           ) : (
+ [2m200[0m | [31;1m|[0m             <Button variant="default">ثبت آگهی</Button>
+ [2m201[0m | [31;1m|[0m           )}
+ [2m202[0m | [31;1m|[0m         </div>
+ [2m203[0m | [31;1m|[0m       </div>
+ [2m204[0m | [31;1m`[0m[31;1m-[0m[31;1m>[0m   )
+ [2m205[0m |     }
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/ad/AdForm.tsx[0m:202:1]
+ [2m202[0m |       </div>
+ [2m203[0m |     </div>
+ [2m204[0m |   )
+ [2m205[0m | }
+     : [31;1m^[0m
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+./app/account/new/page.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./src/lib/db.ts
+Error: 
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:41:1]
+ [2m41[0m | 
+ [2m42[0m |   if (error) {
+ [2m43[0m |     console.error('Error fetching ad:', error);
+ [2m44[0m |     return null;
+    : [31;1m    ^^^^^^^^^^^^[0m
+ [2m45[0m |   }
+ [2m46[0m | 
+ [2m47[0m |   return data;
+    `----
+
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:44:1]
+ [2m44[0m |     return null;
+ [2m45[0m |   }
+ [2m46[0m | 
+ [2m47[0m |   return data;
+    : [31;1m  ^^^^^^^^^^^^[0m
+ [2m48[0m | }
+ [2m49[0m | 
+ [2m50[0m | export async function searchAds(filters: SearchFilters) {
+    `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:129:1]
+ [2m129[0m | }
+ [2m130[0m | 
+ [2m131[0m | // Categories
+ [2m132[0m | export async function getCategories(): Promise&lt;Category[]&gt; {
+     : [31;1m                                                           ^[0m
+ [2m133[0m |   const supabase = createServerClient();
+ [2m134[0m |   const { data, error } = await supabase
+ [2m135[0m |     .from('categories')
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/db.ts
+./src/components/ad/AdForm.tsx
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./src/lib/db.ts
+Error: 
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:41:1]
+ [2m41[0m | 
+ [2m42[0m |   if (error) {
+ [2m43[0m |     console.error('Error fetching ad:', error);
+ [2m44[0m |     return null;
+    : [31;1m    ^^^^^^^^^^^^[0m
+ [2m45[0m |   }
+ [2m46[0m | 
+ [2m47[0m |   return data;
+    `----
+
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:44:1]
+ [2m44[0m |     return null;
+ [2m45[0m |   }
+ [2m46[0m | 
+ [2m47[0m |   return data;
+    : [31;1m  ^^^^^^^^^^^^[0m
+ [2m48[0m | }
+ [2m49[0m | 
+ [2m50[0m | export async function searchAds(filters: SearchFilters) {
+    `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:129:1]
+ [2m129[0m | }
+ [2m130[0m | 
+ [2m131[0m | // Categories
+ [2m132[0m | export async function getCategories(): Promise&lt;Category[]&gt; {
+     : [31;1m                                                           ^[0m
+ [2m133[0m |   const supabase = createServerClient();
+ [2m134[0m |   const { data, error } = await supabase
+ [2m135[0m |     .from('categories')
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/db.ts
+./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+Error: 
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:41:1]
+ [2m41[0m | 
+ [2m42[0m |   if (error) {
+ [2m43[0m |     console.error('Error fetching ad:', error);
+ [2m44[0m |     return null;
+    : [31;1m    ^^^^^^^^^^^^[0m
+ [2m45[0m |   }
+ [2m46[0m | 
+ [2m47[0m |   return data;
+    `----
+
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:44:1]
+ [2m44[0m |     return null;
+ [2m45[0m |   }
+ [2m46[0m | 
+ [2m47[0m |   return data;
+    : [31;1m  ^^^^^^^^^^^^[0m
+ [2m48[0m | }
+ [2m49[0m | 
+ [2m50[0m | export async function searchAds(filters: SearchFilters) {
+    `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:121:1]
+ [2m121[0m | 
+ [2m122[0m |   return data || [];
+ [2m123[0m | }
+ [2m124[0m | }
+     : [31;1m^[0m
+ [2m125[0m | 
+ [2m126[0m | export async function createAd(formData: AdFormData, userId: string) {
+ [2m127[0m |   const supabase = createServerClient();
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/db.ts
+./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+Error: 
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:41:1]
+ [2m41[0m | 
+ [2m42[0m |   if (error) {
+ [2m43[0m |     console.error('Error fetching ad:', error);
+ [2m44[0m |     return null;
+    : [31;1m    ^^^^^^^^^^^^[0m
+ [2m45[0m |   }
+ [2m46[0m | 
+ [2m47[0m |   return data;
+    `----
+
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:44:1]
+ [2m44[0m |     return null;
+ [2m45[0m |   }
+ [2m46[0m | 
+ [2m47[0m |   return data;
+    : [31;1m  ^^^^^^^^^^^^[0m
+ [2m48[0m | }
+ [2m49[0m | 
+ [2m50[0m | export async function searchAds(filters: SearchFilters) {
+    `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:121:1]
+ [2m121[0m | 
+ [2m122[0m |   return data || [];
+ [2m123[0m | }
+ [2m124[0m | }
+     : [31;1m^[0m
+ [2m125[0m | 
+ [2m126[0m | export async function createAd(formData: AdFormData, userId: string) {
+ [2m127[0m |   const supabase = createServerClient();
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/db.ts
+./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+Error: 
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:41:1]
+ [2m41[0m | 
+ [2m42[0m |   if (error) {
+ [2m43[0m |     console.error('Error fetching ad:', error);
+ [2m44[0m |     return null;
+    : [31;1m    ^^^^^^^^^^^^[0m
+ [2m45[0m |   }
+ [2m46[0m | 
+ [2m47[0m |   return data;
+    `----
+
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:44:1]
+ [2m44[0m |     return null;
+ [2m45[0m |   }
+ [2m46[0m | 
+ [2m47[0m |   return data;
+    : [31;1m  ^^^^^^^^^^^^[0m
+ [2m48[0m | }
+ [2m49[0m | 
+ [2m50[0m | export async function searchAds(filters: SearchFilters) {
+    `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:121:1]
+ [2m121[0m | 
+ [2m122[0m |   return data || [];
+ [2m123[0m | }
+ [2m124[0m | }
+     : [31;1m^[0m
+ [2m125[0m | 
+ [2m126[0m | export async function createAd(formData: AdFormData, userId: string) {
+ [2m127[0m |   const supabase = createServerClient();
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/db.ts
+./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+Error: 
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:43:1]
+ [2m43[0m | 
+ [2m44[0m |   if (error) {
+ [2m45[0m |     console.error('Error fetching ad:', error);
+ [2m46[0m |     return null;
+    : [31;1m    ^^^^^^^^^^^^[0m
+ [2m47[0m |   }
+ [2m48[0m | 
+ [2m49[0m |   return data;
+    `----
+
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:46:1]
+ [2m46[0m |     return null;
+ [2m47[0m |   }
+ [2m48[0m | 
+ [2m49[0m |   return data;
+    : [31;1m  ^^^^^^^^^^^^[0m
+ [2m50[0m | }
+ [2m51[0m | 
+ [2m52[0m | export async function searchAds(filters: SearchFilters) {
+    `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:123:1]
+ [2m123[0m | 
+ [2m124[0m |   return data || [];
+ [2m125[0m | }
+ [2m126[0m | }
+     : [31;1m^[0m
+ [2m127[0m | 
+ [2m128[0m | export async function createAd(formData: AdFormData, userId: string) {
+ [2m129[0m |   const supabase = createServerClient();
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/db.ts
+./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+Error: 
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:43:1]
+ [2m43[0m | 
+ [2m44[0m |   if (error) {
+ [2m45[0m |     console.error('Error fetching ad:', error);
+ [2m46[0m |     return null;
+    : [31;1m    ^^^^^^^^^^^^[0m
+ [2m47[0m |   }
+ [2m48[0m | 
+ [2m49[0m |   return data;
+    `----
+
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:46:1]
+ [2m46[0m |     return null;
+ [2m47[0m |   }
+ [2m48[0m | 
+ [2m49[0m |   return data;
+    : [31;1m  ^^^^^^^^^^^^[0m
+ [2m50[0m | }
+ [2m51[0m | 
+ [2m52[0m | export async function searchAds(filters: SearchFilters) {
+    `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:123:1]
+ [2m123[0m | 
+ [2m124[0m |   return data || [];
+ [2m125[0m | }
+ [2m126[0m | }
+     : [31;1m^[0m
+ [2m127[0m | 
+ [2m128[0m | export async function createAd(formData: AdFormData, userId: string) {
+ [2m129[0m |   const supabase = createServerClient();
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/db.ts
+./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+Error: 
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:43:1]
+ [2m43[0m | 
+ [2m44[0m |   if (error) {
+ [2m45[0m |     console.error('Error fetching ad:', error);
+ [2m46[0m |     return null;
+    : [31;1m    ^^^^^^^^^^^^[0m
+ [2m47[0m |   }
+ [2m48[0m | 
+ [2m49[0m |   return data;
+    `----
+
+  [31mx[0m Return statement is not allowed here
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:46:1]
+ [2m46[0m |     return null;
+ [2m47[0m |   }
+ [2m48[0m | 
+ [2m49[0m |   return data;
+    : [31;1m  ^^^^^^^^^^^^[0m
+ [2m50[0m | }
+ [2m51[0m | 
+ [2m52[0m | export async function searchAds(filters: SearchFilters) {
+    `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:123:1]
+ [2m123[0m | 
+ [2m124[0m |   return data || [];
+ [2m125[0m | }
+ [2m126[0m | }
+     : [31;1m^[0m
+ [2m127[0m | 
+ [2m128[0m | export async function createAd(formData: AdFormData, userId: string) {
+ [2m129[0m |   const supabase = createServerClient();
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/db.ts
+./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:123:1]
+ [2m123[0m | 
+ [2m124[0m |   return data || [];
+ [2m125[0m | }
+ [2m126[0m | }
+     : [31;1m^[0m
+ [2m127[0m | 
+ [2m128[0m | export async function createAd(formData: AdFormData, userId: string) {
+ [2m129[0m |   const supabase = createServerClient();
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/db.ts
+./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:125:1]
+ [2m125[0m | 
+ [2m126[0m |   return data || [];
+ [2m127[0m | }
+ [2m128[0m | }
+     : [31;1m^[0m
+ [2m129[0m | 
+ [2m130[0m | export async function createAd(formData: AdFormData, userId: string) {
+ [2m131[0m |   const supabase = createServerClient();
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/db.ts
+./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:125:1]
+ [2m125[0m | 
+ [2m126[0m |   return data || [];
+ [2m127[0m | }
+ [2m128[0m | }
+     : [31;1m^[0m
+ [2m129[0m | 
+ [2m130[0m | export async function createAd(formData: AdFormData, userId: string) {
+ [2m131[0m |   const supabase = createServerClient();
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/db.ts
+./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:125:1]
+ [2m125[0m | 
+ [2m126[0m |   return data || [];
+ [2m127[0m | }
+ [2m128[0m | }
+     : [31;1m^[0m
+ [2m129[0m | 
+ [2m130[0m | export async function createAd(formData: AdFormData, userId: string) {
+ [2m131[0m |   const supabase = createServerClient();
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/db.ts
+./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:125:1]
+ [2m125[0m | 
+ [2m126[0m |   return data || [];
+ [2m127[0m | }
+ [2m128[0m | }
+     : [31;1m^[0m
+ [2m129[0m | 
+ [2m130[0m | export async function createAd(formData: AdFormData, userId: string) {
+ [2m131[0m |   const supabase = createServerClient();
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/db.ts
+./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:125:1]
+ [2m125[0m | 
+ [2m126[0m |   return data || [];
+ [2m127[0m | }
+ [2m128[0m | }
+     : [31;1m^[0m
+ [2m129[0m | 
+ [2m130[0m | export async function createAd(formData: AdFormData, userId: string) {
+ [2m131[0m |   const supabase = createServerClient();
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/db.ts
+./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:125:1]
+ [2m125[0m | 
+ [2m126[0m |   return data || [];
+ [2m127[0m | }
+ [2m128[0m | }
+     : [31;1m^[0m
+ [2m129[0m | 
+ [2m130[0m | export async function createAd(formData: AdFormData, userId: string) {
+ [2m131[0m |   const supabase = createServerClient();
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/db.ts
+./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (126kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+ ⨯ ./src/lib/db.ts
+ReactServerComponentsError:
+
+You're importing a component that needs next/headers. That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+   ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/db.ts[0m:1:1]
+ [2m1[0m | import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+ [2m2[0m | import { cookies } from 'next/headers';
+   : [31;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m3[0m | import type { Database } from './types/supabase';
+ [2m4[0m | import type { 
+ [2m5[0m |   Ad,
+   `----
+
+One of these is marked as a client entry with "use client":
+  ./src/lib/db.ts
+  ./src/components/ad/AdForm.tsx
+ ⚠ 
+
+
+
+
+
+
+
+
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+
+ ⚠ metadata.metadataBase is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⨯ app/page.tsx (13:17) @ getCategories
+ ⨯ TypeError: (0 , _lib_db__WEBPACK_IMPORTED_MODULE_2__.getCategories) is not a function
+    at Home (./app/page.tsx:25:63)
+    at async Promise.all (index 0)
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36masync[39m [36mfunction[39m [33mHome[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [categories[33m,[39m featuredAds] [33m=[39m [36mawait[39m [33mPromise[39m[33m.[39mall([[0m
+[0m[31m[1m>[22m[39m[90m 13 |[39m     getCategories()[33m,[39m[0m
+[0m [90m    |[39m                 [31m[1m^[22m[39m[0m
+[0m [90m 14 |[39m     getFeaturedAds([35m6[39m)[0m
+[0m [90m 15 |[39m   ])[33m;[39m[0m
+[0m [90m 16 |[39m[0m
+ ⨯ app/page.tsx (13:17) @ getCategories
+ ⨯ TypeError: (0 , _lib_db__WEBPACK_IMPORTED_MODULE_2__.getCategories) is not a function
+    at Home (./app/page.tsx:25:63)
+    at async Promise.all (index 0)
+digest: "4019131426"
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36masync[39m [36mfunction[39m [33mHome[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [categories[33m,[39m featuredAds] [33m=[39m [36mawait[39m [33mPromise[39m[33m.[39mall([[0m
+[0m[31m[1m>[22m[39m[90m 13 |[39m     getCategories()[33m,[39m[0m
+[0m [90m    |[39m                 [31m[1m^[22m[39m[0m
+[0m [90m 14 |[39m     getFeaturedAds([35m6[39m)[0m
+[0m [90m 15 |[39m   ])[33m;[39m[0m
+[0m [90m 16 |[39m[0m
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ 
+
+
+
+
+
+
+
+
+ ⚠ 
+
+
+
+
+
+
+
+
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+
+ ⚠ metadata.metadataBase is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+
+ ⚠ metadata.metadataBase is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⨯ app/page.tsx (13:17) @ getCategories
+ ⨯ TypeError: (0 , _lib_db__WEBPACK_IMPORTED_MODULE_2__.getCategories) is not a function
+    at Home (./app/page.tsx:25:63)
+    at async Promise.all (index 0)
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36masync[39m [36mfunction[39m [33mHome[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [categories[33m,[39m featuredAds] [33m=[39m [36mawait[39m [33mPromise[39m[33m.[39mall([[0m
+[0m[31m[1m>[22m[39m[90m 13 |[39m     getCategories()[33m,[39m[0m
+[0m [90m    |[39m                 [31m[1m^[22m[39m[0m
+[0m [90m 14 |[39m     getFeaturedAds([35m6[39m)[0m
+[0m [90m 15 |[39m   ])[33m;[39m[0m
+[0m [90m 16 |[39m[0m
+ ⨯ app/page.tsx (13:17) @ getCategories
+ ⨯ TypeError: (0 , _lib_db__WEBPACK_IMPORTED_MODULE_2__.getCategories) is not a function
+    at Home (./app/page.tsx:25:63)
+    at async Promise.all (index 0)
+digest: "4019131426"
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36masync[39m [36mfunction[39m [33mHome[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [categories[33m,[39m featuredAds] [33m=[39m [36mawait[39m [33mPromise[39m[33m.[39mall([[0m
+[0m[31m[1m>[22m[39m[90m 13 |[39m     getCategories()[33m,[39m[0m
+[0m [90m    |[39m                 [31m[1m^[22m[39m[0m
+[0m [90m 14 |[39m     getFeaturedAds([35m6[39m)[0m
+[0m [90m 15 |[39m   ])[33m;[39m[0m
+[0m [90m 16 |[39m[0m
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⨯ app/page.tsx (13:17) @ getCategories
+ ⨯ TypeError: (0 , _lib_db__WEBPACK_IMPORTED_MODULE_2__.getCategories) is not a function
+    at Home (./app/page.tsx:25:63)
+    at async Promise.all (index 0)
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36masync[39m [36mfunction[39m [33mHome[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [categories[33m,[39m featuredAds] [33m=[39m [36mawait[39m [33mPromise[39m[33m.[39mall([[0m
+[0m[31m[1m>[22m[39m[90m 13 |[39m     getCategories()[33m,[39m[0m
+[0m [90m    |[39m                 [31m[1m^[22m[39m[0m
+[0m [90m 14 |[39m     getFeaturedAds([35m6[39m)[0m
+[0m [90m 15 |[39m   ])[33m;[39m[0m
+[0m [90m 16 |[39m[0m
+ ⨯ app/page.tsx (13:17) @ getCategories
+ ⨯ TypeError: (0 , _lib_db__WEBPACK_IMPORTED_MODULE_2__.getCategories) is not a function
+    at Home (./app/page.tsx:25:63)
+    at async Promise.all (index 0)
+digest: "4019131426"
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36masync[39m [36mfunction[39m [33mHome[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [categories[33m,[39m featuredAds] [33m=[39m [36mawait[39m [33mPromise[39m[33m.[39mall([[0m
+[0m[31m[1m>[22m[39m[90m 13 |[39m     getCategories()[33m,[39m[0m
+[0m [90m    |[39m                 [31m[1m^[22m[39m[0m
+[0m [90m 14 |[39m     getFeaturedAds([35m6[39m)[0m
+[0m [90m 15 |[39m   ])[33m;[39m[0m
+[0m [90m 16 |[39m[0m
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⨯ app/page.tsx (13:17) @ getCategories
+ ⨯ TypeError: (0 , _lib_db__WEBPACK_IMPORTED_MODULE_2__.getCategories) is not a function
+    at Home (./app/page.tsx:25:63)
+    at async Promise.all (index 0)
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36masync[39m [36mfunction[39m [33mHome[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [categories[33m,[39m featuredAds] [33m=[39m [36mawait[39m [33mPromise[39m[33m.[39mall([[0m
+[0m[31m[1m>[22m[39m[90m 13 |[39m     getCategories()[33m,[39m[0m
+[0m [90m    |[39m                 [31m[1m^[22m[39m[0m
+[0m [90m 14 |[39m     getFeaturedAds([35m6[39m)[0m
+[0m [90m 15 |[39m   ])[33m;[39m[0m
+[0m [90m 16 |[39m[0m
+ ⨯ app/page.tsx (13:17) @ getCategories
+ ⨯ TypeError: (0 , _lib_db__WEBPACK_IMPORTED_MODULE_2__.getCategories) is not a function
+    at Home (./app/page.tsx:25:63)
+    at async Promise.all (index 0)
+digest: "4019131426"
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36masync[39m [36mfunction[39m [33mHome[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [categories[33m,[39m featuredAds] [33m=[39m [36mawait[39m [33mPromise[39m[33m.[39mall([[0m
+[0m[31m[1m>[22m[39m[90m 13 |[39m     getCategories()[33m,[39m[0m
+[0m [90m    |[39m                 [31m[1m^[22m[39m[0m
+[0m [90m 14 |[39m     getFeaturedAds([35m6[39m)[0m
+[0m [90m 15 |[39m   ])[33m;[39m[0m
+[0m [90m 16 |[39m[0m
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⨯ app/page.tsx (13:17) @ getCategories
+ ⨯ TypeError: (0 , _lib_db__WEBPACK_IMPORTED_MODULE_2__.getCategories) is not a function
+    at Home (./app/page.tsx:25:63)
+    at async Promise.all (index 0)
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36masync[39m [36mfunction[39m [33mHome[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [categories[33m,[39m featuredAds] [33m=[39m [36mawait[39m [33mPromise[39m[33m.[39mall([[0m
+[0m[31m[1m>[22m[39m[90m 13 |[39m     getCategories()[33m,[39m[0m
+[0m [90m    |[39m                 [31m[1m^[22m[39m[0m
+[0m [90m 14 |[39m     getFeaturedAds([35m6[39m)[0m
+[0m [90m 15 |[39m   ])[33m;[39m[0m
+[0m [90m 16 |[39m[0m
+ ⨯ app/page.tsx (13:17) @ getCategories
+ ⨯ TypeError: (0 , _lib_db__WEBPACK_IMPORTED_MODULE_2__.getCategories) is not a function
+    at Home (./app/page.tsx:25:63)
+    at async Promise.all (index 0)
+digest: "4019131426"
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36masync[39m [36mfunction[39m [33mHome[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [categories[33m,[39m featuredAds] [33m=[39m [36mawait[39m [33mPromise[39m[33m.[39mall([[0m
+[0m[31m[1m>[22m[39m[90m 13 |[39m     getCategories()[33m,[39m[0m
+[0m [90m    |[39m                 [31m[1m^[22m[39m[0m
+[0m [90m 14 |[39m     getFeaturedAds([35m6[39m)[0m
+[0m [90m 15 |[39m   ])[33m;[39m[0m
+[0m [90m 16 |[39m[0m
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'getCategories' is not exported from '@/lib/db' (imported as 'getCategories').
+
+Import trace for requested module:
+./app/page.tsx
+
+./app/page.tsx
+Attempted import error: 'getFeaturedAds' is not exported from '@/lib/db' (imported as 'getFeaturedAds').
+
+Import trace for requested module:
+./app/page.tsx
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⨯ app/page.tsx (13:17) @ getCategories
+ ⨯ TypeError: (0 , _lib_db__WEBPACK_IMPORTED_MODULE_2__.getCategories) is not a function
+    at Home (./app/page.tsx:25:63)
+    at async Promise.all (index 0)
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36masync[39m [36mfunction[39m [33mHome[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [categories[33m,[39m featuredAds] [33m=[39m [36mawait[39m [33mPromise[39m[33m.[39mall([[0m
+[0m[31m[1m>[22m[39m[90m 13 |[39m     getCategories()[33m,[39m[0m
+[0m [90m    |[39m                 [31m[1m^[22m[39m[0m
+[0m [90m 14 |[39m     getFeaturedAds([35m6[39m)[0m
+[0m [90m 15 |[39m   ])[33m;[39m[0m
+[0m [90m 16 |[39m[0m
+ ⨯ app/page.tsx (13:17) @ getCategories
+ ⨯ TypeError: (0 , _lib_db__WEBPACK_IMPORTED_MODULE_2__.getCategories) is not a function
+    at Home (./app/page.tsx:25:63)
+    at async Promise.all (index 0)
+digest: "4019131426"
+[0m [90m 11 |[39m [36mexport[39m [36mdefault[39m [36masync[39m [36mfunction[39m [33mHome[39m() {[0m
+[0m [90m 12 |[39m   [36mconst[39m [categories[33m,[39m featuredAds] [33m=[39m [36mawait[39m [33mPromise[39m[33m.[39mall([[0m
+[0m[31m[1m>[22m[39m[90m 13 |[39m     getCategories()[33m,[39m[0m
+[0m [90m    |[39m                 [31m[1m^[22m[39m[0m
+[0m [90m 14 |[39m     getFeaturedAds([35m6[39m)[0m
+[0m [90m 15 |[39m   ])[33m;[39m[0m
+[0m [90m 16 |[39m[0m
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+
+ ⚠ metadata.metadataBase is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+Error fetching categories: {
+  code: 'PGRST205',
+  details: null,
+  hint: null,
+  message: "Could not find the table 'public.categories' in the schema cache"
+}
+Error fetching featured ads: {
+  code: 'PGRST205',
+  details: null,
+  hint: null,
+  message: "Could not find the table 'public.ads' in the schema cache"
+}
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+
+ ⚠ metadata.metadataBase is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+Error fetching categories: {
+  code: 'PGRST205',
+  details: null,
+  hint: null,
+  message: "Could not find the table 'public.categories' in the schema cache"
+}
+Error fetching featured ads: {
+  code: 'PGRST205',
+  details: null,
+  hint: null,
+  message: "Could not find the table 'public.ads' in the schema cache"
+}
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⨯ ./src/lib/server-db.ts
+Error: 
+  [31mx[0m the name `getCategories` is defined multiple times
+     ,-[[36;1;4m/workspaces/Ad-marketplace/src/lib/server-db.ts[0m:27:1]
+ [2m 27[0m |   return data;
+ [2m 28[0m | }
+ [2m 29[0m | 
+ [2m 30[0m | export async function getCategories(): Promise<Category[]> {
+     : [31;1m                      ^^^^^^|^^^^^^[0m
+     :                             [31;1m`-- [31;1mprevious definition of `getCategories` here[0m[0m
+ [2m 31[0m |   const supabase = createServerClient();
+ [2m 32[0m |   const { data, error } = await supabase
+ [2m 33[0m |     .from('categories')
+ [2m 34[0m |     .select('*')
+ [2m 35[0m |     .order('sort_order', { ascending: true });
+ [2m 36[0m | 
+ [2m 37[0m |   if (error) {
+ [2m 38[0m |     console.error('Error fetching categories:', error);
+ [2m 39[0m |     return [];
+ [2m 40[0m |   }
+ [2m 41[0m | 
+ [2m 42[0m |   return data;
+ [2m 43[0m | }
+ [2m 44[0m | 
+ [2m 45[0m | export async function getFeaturedAds(limit = 6): Promise<Ad[]> {
+ [2m 46[0m |   const supabase = createServerClient();
+ [2m 47[0m |   const { data, error } = await supabase
+ [2m 48[0m |     .from('ads')
+ [2m 49[0m |     .select(`
+ [2m 50[0m |       *,
+ [2m 51[0m |       category:category_id (name, slug),
+ [2m 52[0m |       owner:user_id (username, avatar_url)
+ [2m 53[0m |     `)
+ [2m 54[0m |     .eq('status', 'published')
+ [2m 55[0m |     .eq('is_featured', true)
+ [2m 56[0m |     .order('created_at', { ascending: false })
+ [2m 57[0m |     .limit(limit);
+ [2m 58[0m | 
+ [2m 59[0m |   if (error) {
+ [2m 60[0m |     console.error('Error fetching featured ads:', error);
+ [2m 61[0m |     return [];
+ [2m 62[0m |   }
+ [2m 63[0m | 
+ [2m 64[0m |   return data;
+ [2m 65[0m | }
+ [2m 66[0m | 
+ [2m 67[0m | export async function searchAds(filters: SearchFilters) {
+ [2m 68[0m |   const supabase = createServerClient();
+ [2m 69[0m |   const {
+ [2m 70[0m |     query,
+ [2m 71[0m |     categorySlug,
+ [2m 72[0m |     priceMin,
+ [2m 73[0m |     priceMax,
+ [2m 74[0m |     city,
+ [2m 75[0m |     sortBy = 'newest',
+ [2m 76[0m |     page = 1,
+ [2m 77[0m |     limit = 20
+ [2m 78[0m |   } = filters;
+ [2m 79[0m | 
+ [2m 80[0m |   let queryBuilder = supabase
+ [2m 81[0m |     .from('ads')
+ [2m 82[0m |     .select(`
+ [2m 83[0m |       *,
+ [2m 84[0m |       category:category_id (name, slug),
+ [2m 85[0m |       owner:user_id (username, avatar_url)
+ [2m 86[0m |     `, { count: 'exact' });
+ [2m 87[0m | 
+ [2m 88[0m |   if (query) {
+ [2m 89[0m |     queryBuilder = queryBuilder.ilike('title', `%${query}%`);
+ [2m 90[0m |   }
+ [2m 91[0m | 
+ [2m 92[0m |   if (categorySlug) {
+ [2m 93[0m |     queryBuilder = queryBuilder.eq('category.slug', categorySlug);
+ [2m 94[0m |   }
+ [2m 95[0m | 
+ [2m 96[0m |   if (priceMin) {
+ [2m 97[0m |     queryBuilder = queryBuilder.gte('price', priceMin);
+ [2m 98[0m |   }
+ [2m 99[0m | 
+ [2m100[0m |   if (priceMax) {
+ [2m101[0m |     queryBuilder = queryBuilder.lte('price', priceMax);
+ [2m102[0m |   }
+ [2m103[0m | 
+ [2m104[0m |   if (city) {
+ [2m105[0m |     queryBuilder = queryBuilder.eq('location->city', city);
+ [2m106[0m |   }
+ [2m107[0m | 
+ [2m108[0m |   // Apply sorting
+ [2m109[0m |   switch (sortBy) {
+ [2m110[0m |     case 'price-asc':
+ [2m111[0m |       queryBuilder = queryBuilder.order('price', { ascending: true });
+ [2m112[0m |       break;
+ [2m113[0m |     case 'price-desc':
+ [2m114[0m |       queryBuilder = queryBuilder.order('price', { ascending: false });
+ [2m115[0m |       break;
+ [2m116[0m |     default:
+ [2m117[0m |       queryBuilder = queryBuilder.order('created_at', { ascending: false });
+ [2m118[0m |   }
+ [2m119[0m | 
+ [2m120[0m |   // Apply pagination
+ [2m121[0m |   const from = (page - 1) * limit;
+ [2m122[0m |   queryBuilder = queryBuilder.range(from, from + limit - 1);
+ [2m123[0m | 
+ [2m124[0m |   const { data, error, count } = await queryBuilder;
+ [2m125[0m | 
+ [2m126[0m |   if (error) {
+ [2m127[0m |     console.error('Error searching ads:', error);
+ [2m128[0m |     return { ads: [], total: 0 };
+ [2m129[0m |   }
+ [2m130[0m | 
+ [2m131[0m |   return { 
+ [2m132[0m |     ads: data || [], 
+ [2m133[0m |     total: count || 0 
+ [2m134[0m |   };
+ [2m135[0m | }
+ [2m136[0m | 
+ [2m137[0m | export async function getCategories(): Promise<Category[]> {
+     : [33;1m                      ^^^^^^|^^^^^^[0m
+     :                             [33;1m`-- [33;1m`getCategories` redefined here[0m[0m
+ [2m138[0m |   const supabase = createServerClient();
+ [2m139[0m |   const { data, error } = await supabase
+ [2m140[0m |     .from('categories')
+     `----
+
+Import trace for requested module:
+./src/lib/server-db.ts
+./app/page.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+
+ ⚠ metadata.metadataBase is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+
+ ⚠ metadata.metadataBase is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+
+ ⚠ metadata.metadataBase is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+
+ ⚠ metadata.metadataBase is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+Error fetching featured ads: {
+  code: 'PGRST205',
+  details: null,
+  hint: null,
+  message: "Could not find the table 'public.ads' in the schema cache"
+}
+Error fetching categories: {
+  code: '42703',
+  details: null,
+  hint: null,
+  message: 'column categories.sort_order does not exist'
+}
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+Error fetching featured ads: {
+  code: 'PGRST205',
+  details: null,
+  hint: null,
+  message: "Could not find the table 'public.ads' in the schema cache"
+}
+Error fetching categories: {
+  code: '42703',
+  details: null,
+  hint: null,
+  message: 'column categories.sort_order does not exist'
+}
+ ⚠ Unsupported metadata themeColor is configured in metadata export. Please move it to viewport export instead.
+ ⚠ Unsupported metadata viewport is configured in metadata export. Please move it to viewport export instead.
+Error fetching categories: {
+  code: '42703',
+  details: null,
+  hint: null,
+  message: 'column categories.sort_order does not exist'
+}
+Error fetching featured ads: {
+  code: 'PGRST205',
+  details: null,
+  hint: null,
+  message: "Could not find the table 'public.ads' in the schema cache"
+}
+ ⚠ ./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /workspaces/Ad-marketplace/.next/cache/webpack/server-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /workspaces/Ad-marketplace/.next/cache/webpack/client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ⨯ ./app/page.tsx
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/app/page.tsx[0m:316:1]
+ [2m316[0m |   );
+ [2m317[0m | }
+ [2m318[0m |                 className="flex-grow"
+ [2m319[0m |               />
+     : [31;1m               ^[0m
+ [2m320[0m |               <Button type="submit">جستجو</Button>
+ [2m321[0m |             </form>
+ [2m322[0m |           </div>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ⨯ ./app/page.tsx
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/app/page.tsx[0m:353:1]
+ [2m353[0m |   );
+ [2m354[0m | }
+ [2m355[0m |                 className="flex-grow"
+ [2m356[0m |               />
+     : [31;1m               ^[0m
+ [2m357[0m |               <Button type="submit">جستجو</Button>
+ [2m358[0m |             </form>
+ [2m359[0m |           </div>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ⨯ ./app/page.tsx
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/app/page.tsx[0m:353:1]
+ [2m353[0m |   );
+ [2m354[0m | }
+ [2m355[0m |                 className="flex-grow"
+ [2m356[0m |               />
+     : [31;1m               ^[0m
+ [2m357[0m |               <Button type="submit">جستجو</Button>
+ [2m358[0m |             </form>
+ [2m359[0m |           </div>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /workspaces/Ad-marketplace/.next/cache/webpack/server-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /workspaces/Ad-marketplace/.next/cache/webpack/client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ⨯ app/layout.tsx
+Module not found: Can't resolve '../public/fonts/Vazir-Thin-FD.woff2'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/font/local/target.css?{"path":"app/layout.tsx","import":"","arguments":[{"src":[{"path":"../public/fonts/Vazir-Thin-FD.woff2","weight":"100","style":"normal"},{"path":"../public/fonts/Vazir-Light-FD.woff2","weight":"300","style":"normal"},{"path":"../public/fonts/Vazir-Regular-FD.woff2","weight":"400","style":"normal"},{"path":"../public/fonts/Vazir-Medium-FD.woff2","weight":"500","style":"normal"},{"path":"../public/fonts/Vazir-Bold-FD.woff2","weight":"700","style":"normal"}],"variable":"--font-vazir","display":"swap","fallback":["system-ui","arial"]}],"variableName":"vazir"}
+ ⨯ ./app/layout.tsx
+Error: 
+  [31mx[0m Unexpected token `html`. Expected jsx identifier
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/layout.tsx[0m:65:1]
+ [2m65[0m | 
+ [2m66[0m | export default function RootLayout({ children }: { children: ReactNode }) {
+ [2m67[0m |   return (
+ [2m68[0m |     <html lang="fa" dir="rtl" suppressHydrationWarning>
+    : [31;1m     ^^^^[0m
+ [2m69[0m |       <body className={`${vazir.variable} min-h-screen bg-background font-sans antialiased`}>
+ [2m70[0m |         <ThemeProvider
+ [2m71[0m |           attribute="class"
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx
+ ⨯ ./app/layout.tsx
+Error: 
+  [31mx[0m Expected ';', '}' or <eof>
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/layout.tsx[0m:78:1]
+ [2m78[0m |           </body>
+ [2m79[0m |         </html>
+ [2m80[0m |       );
+ [2m81[0m | [31;1m,[0m[31;1m-[0m[31;1m>[0m         <main className="container mx-auto p-4">{children}</main>
+ [2m82[0m | [31;1m|[0m[31;1m-[0m[31;1m>[0m         <script src="/sw-register.js" />
+    : [31;1m`[0m[31;1m---[0m[33;1m                ^^^[0m
+    : [31;1m`[0m[31;1m---[0m[31;1m-[0m [31;1mThis is the expression part of an expression statement[0m
+ [2m83[0m |           </body>
+ [2m84[0m |         </html>
+ [2m85[0m |       )
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx
+ ⨯ ./app/layout.tsx
+Error: 
+  [31mx[0m Expected ';', got 'className'
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/layout.tsx[0m:79:1]
+ [2m79[0m |       </body>
+ [2m80[0m |     </html>
+ [2m81[0m |   )
+ [2m82[0m |         <main className="container mx-auto p-4">{children}</main>
+    : [31;1m              ^^^^^^^^^[0m
+ [2m83[0m |         <script src="/sw-register.js" />
+ [2m84[0m |       </body>
+ [2m85[0m |     </html>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /workspaces/Ad-marketplace/.next/cache/webpack/client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /workspaces/Ad-marketplace/.next/cache/webpack/server-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ⨯ ./app/layout.tsx
+Error: 
+  [31mx[0m Expected ';', got 'className'
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/layout.tsx[0m:79:1]
+ [2m79[0m |       </body>
+ [2m80[0m |     </html>
+ [2m81[0m |   )
+ [2m82[0m |         <main className="container mx-auto p-4">{children}</main>
+    : [31;1m              ^^^^^^^^^[0m
+ [2m83[0m |         <script src="/sw-register.js" />
+ [2m84[0m |       </body>
+ [2m85[0m |     </html>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx
+ ⨯ ./app/layout.tsx
+Error: 
+  [31mx[0m Expected ';', got 'className'
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/layout.tsx[0m:81:1]
+ [2m81[0m |       </body>
+ [2m82[0m |     </html>
+ [2m83[0m |   )
+ [2m84[0m |         <main className="container mx-auto p-4">{children}</main>
+    : [31;1m              ^^^^^^^^^[0m
+ [2m85[0m |         <script src="/sw-register.js" />
+ [2m86[0m |       </body>
+ [2m87[0m |     </html>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx
+ ⨯ ./app/layout.tsx
+Error: 
+  [31mx[0m Expected ';', got 'className'
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/layout.tsx[0m:82:1]
+ [2m82[0m |       </body>
+ [2m83[0m |     </html>
+ [2m84[0m |   )
+ [2m85[0m |         <main className="container mx-auto p-4">{children}</main>
+    : [31;1m              ^^^^^^^^^[0m
+ [2m86[0m |         <script src="/sw-register.js" />
+ [2m87[0m |       </body>
+ [2m88[0m |     </html>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /workspaces/Ad-marketplace/.next/cache/webpack/server-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ⨯ ./app/layout.tsx
+Error: 
+  [31mx[0m Expected ';', got 'className'
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/layout.tsx[0m:84:1]
+ [2m84[0m |       </body>
+ [2m85[0m |     </html>
+ [2m86[0m |   )
+ [2m87[0m |         <main className="container mx-auto p-4">{children}</main>
+    : [31;1m              ^^^^^^^^^[0m
+ [2m88[0m |         <script src="/sw-register.js" />
+ [2m89[0m |       </body>
+ [2m90[0m |     </html>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx
+ ⨯ ./app/layout.tsx
+Error: 
+  [31mx[0m Expected ';', got 'className'
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/layout.tsx[0m:57:1]
+ [2m57[0m |       </body>
+ [2m58[0m |     </html>
+ [2m59[0m |   )
+ [2m60[0m |         <main className="container mx-auto p-4">{children}</main>
+    : [31;1m              ^^^^^^^^^[0m
+ [2m61[0m |         <script src="/sw-register.js" />
+ [2m62[0m |       </body>
+ [2m63[0m |     </html>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx
+ ⨯ ./app/layout.tsx
+Error: 
+  [31mx[0m Expected ';', got 'className'
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/layout.tsx[0m:57:1]
+ [2m57[0m |       </body>
+ [2m58[0m |     </html>
+ [2m59[0m |   )
+ [2m60[0m |         <main className="container mx-auto p-4">{children}</main>
+    : [31;1m              ^^^^^^^^^[0m
+ [2m61[0m |         <script src="/sw-register.js" />
+ [2m62[0m |       </body>
+ [2m63[0m |     </html>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx
+ ⨯ ./app/layout.tsx
+Error: 
+  [31mx[0m Expected ';', got 'className'
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/layout.tsx[0m:57:1]
+ [2m57[0m |       </body>
+ [2m58[0m |     </html>
+ [2m59[0m |   )
+ [2m60[0m |         <main className="container mx-auto p-4">{children}</main>
+    : [31;1m              ^^^^^^^^^[0m
+ [2m61[0m |         <script src="/sw-register.js" />
+ [2m62[0m |       </body>
+ [2m63[0m |     </html>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx
+ ⨯ ./app/layout.tsx
+Error: 
+  [31mx[0m Expected ';', got 'className'
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/layout.tsx[0m:57:1]
+ [2m57[0m |       </body>
+ [2m58[0m |     </html>
+ [2m59[0m |   )
+ [2m60[0m |         <main className="container mx-auto p-4">{children}</main>
+    : [31;1m              ^^^^^^^^^[0m
+ [2m61[0m |         <script src="/sw-register.js" />
+ [2m62[0m |       </body>
+ [2m63[0m |     </html>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx
+ ⨯ ./app/layout.tsx
+Error: 
+  [31mx[0m Expected ';', got 'className'
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/layout.tsx[0m:61:1]
+ [2m61[0m |       </body>
+ [2m62[0m |     </html>
+ [2m63[0m |   )
+ [2m64[0m |         <main className="container mx-auto p-4">{children}</main>
+    : [31;1m              ^^^^^^^^^[0m
+ [2m65[0m |         <script src="/sw-register.js" />
+ [2m66[0m |       </body>
+ [2m67[0m |     </html>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /workspaces/Ad-marketplace/.next/cache/webpack/server-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /workspaces/Ad-marketplace/.next/cache/webpack/client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ⨯ ./app/page.tsx
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/app/page.tsx[0m:353:1]
+ [2m353[0m |   );
+ [2m354[0m | }
+ [2m355[0m |                 className="flex-grow"
+ [2m356[0m |               />
+     : [31;1m               ^[0m
+ [2m357[0m |               <Button type="submit">جستجو</Button>
+ [2m358[0m |             </form>
+ [2m359[0m |           </div>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ⨯ ./app/page.tsx
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/app/page.tsx[0m:353:1]
+ [2m353[0m |   );
+ [2m354[0m | }
+ [2m355[0m |                 className="flex-grow"
+ [2m356[0m |               />
+     : [31;1m               ^[0m
+ [2m357[0m |               <Button type="submit">جستجو</Button>
+ [2m358[0m |             </form>
+ [2m359[0m |           </div>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+Error: Cannot apply unknown utility class `border-border`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    at onInvalidCandidate (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:1332)
+    at ge (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:13:30343)
+    at /workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:373
+    at L (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:3:1656)
+    at Ie (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:172)
+    at xi (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:37:294)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Ai (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:37:637)
+    at async Ur (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+node@4.1.14/node_modules/@tailwindcss/node/dist/index.js:10:3384)
+    at async ue (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+postcss@4.1.14/node_modules/@tailwindcss/postcss/dist/index.js:10:3981)
+    at async Object.Once (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+postcss@4.1.14/node_modules/@tailwindcss/postcss/dist/index.js:10:4833)
+    at async LazyResult.runAsync (/workspaces/Ad-marketplace/node_modules/.pnpm/postcss@8.4.31/node_modules/postcss/lib/lazy-result.js:261:11)
+    at async Span.traceAsyncFn (/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:105:20)
+    at async /workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js:54:22
+    at async Span.traceAsyncFn (/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:105:20)
+ ⨯ ./app/globals.css:1:1
+Syntax error: tailwindcss: /workspaces/Ad-marketplace/app/globals.css Cannot apply unknown utility class `border-border`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+
+> 1 | @tailwind base;
+    | ^
+  2 | @tailwind components;
+  3 | @tailwind utilities;
+Error: Cannot apply unknown utility class `border-border`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    at onInvalidCandidate (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:1332)
+    at ge (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:13:30343)
+    at /workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:373
+    at L (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:3:1656)
+    at Ie (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:172)
+    at xi (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:37:294)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Ai (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:37:637)
+    at async Ur (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+node@4.1.14/node_modules/@tailwindcss/node/dist/index.js:10:3384)
+    at async ue (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+postcss@4.1.14/node_modules/@tailwindcss/postcss/dist/index.js:10:3981)
+    at async Object.Once (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+postcss@4.1.14/node_modules/@tailwindcss/postcss/dist/index.js:10:4252)
+    at async LazyResult.runAsync (/workspaces/Ad-marketplace/node_modules/.pnpm/postcss@8.4.31/node_modules/postcss/lib/lazy-result.js:261:11)
+    at async Span.traceAsyncFn (/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:105:20)
+    at async /workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js:54:22
+    at async Span.traceAsyncFn (/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:105:20)
+ ⨯ ./app/globals.css:1:1
+Syntax error: tailwindcss: /workspaces/Ad-marketplace/app/globals.css Cannot apply unknown utility class `border-border`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+
+> 1 | @tailwind base;
+    | ^
+  2 | @tailwind components;
+  3 | @tailwind utilities;
+Error: Cannot apply unknown utility class `border-border`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    at onInvalidCandidate (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:1332)
+    at ge (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:13:30343)
+    at /workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:373
+    at L (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:3:1656)
+    at Ie (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:172)
+    at xi (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:37:294)
+    at async Ai (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:37:637)
+    at async Ur (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+node@4.1.14/node_modules/@tailwindcss/node/dist/index.js:10:3384)
+    at async ue (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+postcss@4.1.14/node_modules/@tailwindcss/postcss/dist/index.js:10:3981)
+    at async Object.Once (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+postcss@4.1.14/node_modules/@tailwindcss/postcss/dist/index.js:10:4252)
+    at async LazyResult.runAsync (/workspaces/Ad-marketplace/node_modules/.pnpm/postcss@8.4.31/node_modules/postcss/lib/lazy-result.js:261:11)
+    at async Span.traceAsyncFn (/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:105:20)
+    at async /workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js:54:22
+    at async Span.traceAsyncFn (/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:105:20)
+ ⨯ ./app/globals.css:1:1
+Syntax error: tailwindcss: /workspaces/Ad-marketplace/app/globals.css Cannot apply unknown utility class `border-border`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+
+> 1 | @tailwind base;
+    | ^
+  2 | @tailwind components;
+  3 | @tailwind utilities;
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!/workspaces/Ad-marketplace/app/globals.css': No serializer registered for PostCSSSyntaxError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError
+Error: Cannot apply unknown utility class `border-border`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    at onInvalidCandidate (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:1332)
+    at ge (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:13:30343)
+    at /workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:373
+    at L (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:3:1656)
+    at Ie (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:172)
+    at xi (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:37:294)
+    at async Ai (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:37:637)
+    at async Ur (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+node@4.1.14/node_modules/@tailwindcss/node/dist/index.js:10:3384)
+    at async ue (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+postcss@4.1.14/node_modules/@tailwindcss/postcss/dist/index.js:10:3981)
+    at async Object.Once (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+postcss@4.1.14/node_modules/@tailwindcss/postcss/dist/index.js:10:4252)
+    at async LazyResult.runAsync (/workspaces/Ad-marketplace/node_modules/.pnpm/postcss@8.4.31/node_modules/postcss/lib/lazy-result.js:261:11)
+    at async Span.traceAsyncFn (/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:105:20)
+    at async /workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js:54:22
+    at async Span.traceAsyncFn (/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:105:20)
+ ⨯ ./app/globals.css:1:1
+Syntax error: tailwindcss: /workspaces/Ad-marketplace/app/globals.css Cannot apply unknown utility class `border-border`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+
+> 1 | @tailwind base;
+    | ^
+  2 | @tailwind components;
+  3 | @tailwind utilities;
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!/workspaces/Ad-marketplace/app/globals.css': No serializer registered for PostCSSSyntaxError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError
+Error: Cannot apply unknown utility class `border-border`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    at onInvalidCandidate (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:1332)
+    at ge (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:13:30343)
+    at /workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:373
+    at L (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:3:1656)
+    at Ie (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:172)
+    at xi (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:37:294)
+    at async Ai (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:37:637)
+    at async Ur (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+node@4.1.14/node_modules/@tailwindcss/node/dist/index.js:10:3384)
+    at async ue (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+postcss@4.1.14/node_modules/@tailwindcss/postcss/dist/index.js:10:3981)
+    at async Object.Once (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+postcss@4.1.14/node_modules/@tailwindcss/postcss/dist/index.js:10:4252)
+    at async LazyResult.runAsync (/workspaces/Ad-marketplace/node_modules/.pnpm/postcss@8.4.31/node_modules/postcss/lib/lazy-result.js:261:11)
+    at async Span.traceAsyncFn (/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:105:20)
+    at async /workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js:54:22
+    at async Span.traceAsyncFn (/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:105:20)
+ ⨯ ./app/globals.css:1:1
+Syntax error: tailwindcss: /workspaces/Ad-marketplace/app/globals.css Cannot apply unknown utility class `border-border`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+
+> 1 | @tailwind base;
+    | ^
+  2 | @tailwind components;
+  3 | @tailwind utilities;
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!/workspaces/Ad-marketplace/app/globals.css': No serializer registered for PostCSSSyntaxError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError
+ ⨯ ./app/page.tsx
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4m/workspaces/Ad-marketplace/app/page.tsx[0m:361:1]
+ [2m361[0m |   );
+ [2m362[0m | }
+ [2m363[0m |                 className="flex-grow"
+ [2m364[0m |               />
+     : [31;1m               ^[0m
+ [2m365[0m |               <Button type="submit">جستجو</Button>
+ [2m366[0m |             </form>
+ [2m367[0m |           </div>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+Error: Cannot apply unknown utility class `border-border`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    at onInvalidCandidate (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:1332)
+    at ge (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:13:30343)
+    at /workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:373
+    at L (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:3:1656)
+    at Ie (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:172)
+    at xi (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:37:294)
+    at async Ai (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:37:637)
+    at async Ur (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+node@4.1.14/node_modules/@tailwindcss/node/dist/index.js:10:3384)
+    at async ue (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+postcss@4.1.14/node_modules/@tailwindcss/postcss/dist/index.js:10:3981)
+    at async Object.Once (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+postcss@4.1.14/node_modules/@tailwindcss/postcss/dist/index.js:10:4252)
+    at async LazyResult.runAsync (/workspaces/Ad-marketplace/node_modules/.pnpm/postcss@8.4.31/node_modules/postcss/lib/lazy-result.js:261:11)
+    at async Span.traceAsyncFn (/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:105:20)
+    at async /workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js:54:22
+    at async Span.traceAsyncFn (/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:105:20)
+ ⨯ ./app/globals.css:1:1
+Syntax error: tailwindcss: /workspaces/Ad-marketplace/app/globals.css Cannot apply unknown utility class `border-border`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+
+> 1 | @tailwind base;
+    | ^
+  2 | @tailwind components;
+  3 | @tailwind utilities;
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!/workspaces/Ad-marketplace/app/globals.css': No serializer registered for PostCSSSyntaxError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError
+ ⨯ ./app/page.tsx
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/workspaces/Ad-marketplace/app/page.tsx[0m:5:1]
+ [2m 5[0m | import Link from "next/link"
+ [2m 6[0m | import Image from "next/image"
+ [2m 7[0m | import CategoryGrid from "@/components/CategoryGrid"
+ [2m 8[0m | } from "@/components/ui/card"
+    : [31;1m^[0m
+ [2m 9[0m | import { Badge } from "@/components/ui/badge"
+ [2m10[0m | import { createClient } from "@/lib/supabaseClient"
+ [2m11[0m | import Link from "next/link"
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+Error: Cannot apply unknown utility class `border-border`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    at onInvalidCandidate (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:1332)
+    at ge (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:13:30343)
+    at /workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:373
+    at L (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:3:1656)
+    at Ie (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:18:172)
+    at xi (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:37:294)
+    at async Ai (/workspaces/Ad-marketplace/node_modules/.pnpm/tailwindcss@4.1.14/node_modules/tailwindcss/dist/lib.js:37:637)
+    at async Ur (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+node@4.1.14/node_modules/@tailwindcss/node/dist/index.js:10:3384)
+    at async ue (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+postcss@4.1.14/node_modules/@tailwindcss/postcss/dist/index.js:10:3981)
+    at async Object.Once (/workspaces/Ad-marketplace/node_modules/.pnpm/@tailwindcss+postcss@4.1.14/node_modules/@tailwindcss/postcss/dist/index.js:10:4252)
+    at async LazyResult.runAsync (/workspaces/Ad-marketplace/node_modules/.pnpm/postcss@8.4.31/node_modules/postcss/lib/lazy-result.js:261:11)
+    at async Span.traceAsyncFn (/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:105:20)
+    at async /workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js:54:22
+    at async Span.traceAsyncFn (/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:105:20)
+ ⨯ ./app/globals.css:1:1
+Syntax error: tailwindcss: /workspaces/Ad-marketplace/app/globals.css Cannot apply unknown utility class `border-border`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+
+> 1 | @tailwind base;
+    | ^
+  2 | @tailwind components;
+  3 | @tailwind utilities;
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!/workspaces/Ad-marketplace/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!/workspaces/Ad-marketplace/app/globals.css': No serializer registered for PostCSSSyntaxError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError
+ ⨯ ./src/components/CategoryGrid.tsx
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/CategoryGrid.tsx[0m:4:1]
+ [2m 4[0m | interface CategoryGridProps {
+ [2m 5[0m |   featured?: boolean
+ [2m 6[0m | }
+ [2m 7[0m | }
+    : [31;1m^[0m
+ [2m 8[0m | 
+ [2m 9[0m | export function CategoryGrid({ categories }: CategoryGridProps) {
+ [2m10[0m |   return (
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/CategoryGrid.tsx
+./app/page.tsx
+ ⨯ ./src/components/CategoryGrid.tsx
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/CategoryGrid.tsx[0m:4:1]
+ [2m 4[0m | interface CategoryGridProps {
+ [2m 5[0m |   featured?: boolean
+ [2m 6[0m | }
+ [2m 7[0m | }
+    : [31;1m^[0m
+ [2m 8[0m | 
+ [2m 9[0m | export default function CategoryGrid({ featured = false }: CategoryGridProps) {
+ [2m10[0m |   const categories = [
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/CategoryGrid.tsx
+./app/page.tsx
+ ⨯ ./src/components/CategoryGrid.tsx
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/CategoryGrid.tsx[0m:4:1]
+ [2m 4[0m | interface CategoryGridProps {
+ [2m 5[0m |   featured?: boolean
+ [2m 6[0m | }
+ [2m 7[0m | }
+    : [31;1m^[0m
+ [2m 8[0m | 
+ [2m 9[0m | export default function CategoryGrid({ featured = false }: CategoryGridProps) {
+ [2m10[0m |   const categories = [
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/CategoryGrid.tsx
+./app/page.tsx
+ ⨯ ./src/components/CategoryGrid.tsx
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/CategoryGrid.tsx[0m:53:1]
+ [2m53[0m | 
+ [2m54[0m |   const displayCategories = featured ? categories.slice(0, 6) : categories
+ [2m55[0m |   return (
+ [2m56[0m |       return (
+    : [31;1m      ^^^^^^[0m
+ [2m57[0m |     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+ [2m58[0m |       {displayCategories.map((category) => (
+ [2m59[0m |         <Link
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/CategoryGrid.tsx
+./app/page.tsx
+ ⨯ ./src/components/CategoryGrid.tsx
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/workspaces/Ad-marketplace/src/components/CategoryGrid.tsx[0m:76:1]
+ [2m76[0m |       ))}
+ [2m77[0m |     </div>
+ [2m78[0m |   )
+ [2m79[0m |   )
+    : [31;1m  ^[0m
+ [2m80[0m | }
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/CategoryGrid.tsx
+./app/page.tsx
+ ⚠ 
+
+
+
+
+
+
+
+
+
+./src/components/ad/AdForm.tsx
+Attempted import error: 'createAd' is not exported from '@/lib/db' (imported as 'createAd').
+
+Import trace for requested module:
+./src/components/ad/AdForm.tsx
+
+./app/page.tsx
+Attempted import error: 'auth' is not exported from '@/lib/auth' (imported as 'auth').
+
+Import trace for requested module:
+./app/page.tsx
